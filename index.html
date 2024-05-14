@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информационный сайт</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="scriptimg.js"></script>
+    <script src="scriptimgitems.js"></script>
+    <script src="scriptimgnitems.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на информационный сайт по игре Dota 2</h1>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="section2.html">Суть игры и основные механики</a>
+        <a href="section3.html">О сайте</a>
+    </nav>
+    <div class="content">
+        <section id="section1">
+            <h2>Основная информация</h2>
+            <img src="img/dota2.jpg" alt="dota2">
+            <p>
+                <b>Dota 2</b> — многопользовательская командная компьютерная игра в жанре <b>MOBA</b>, разработанная и изданная корпорацией <b>Valve</b>. 
+                Игра является продолжением <b>DotA</b> — пользовательской карты-модификации для игры <b>Warcraft III: Reign of Chaos</b> и дополнения к ней <b>Warcraft III: The Frozen Throne</b>.</p>
+                <p>Игра изображает сражение на карте особого вида; 
+                в каждом матче участвуют две команды по пять игроков, управляющих разными <i>«героями»</i> — персонажами с различными наборами способностей и характеристиками. 
+                Для победы в матче команда должна уничтожить особый объект — <i>«крепость»</i>, принадлежащий вражеской стороне, и защитить от уничтожения собственную <i>«крепость»</i>.</p> 
+                <p><b>Dota 2</b> работает по модели <i>free-to-play</i> с элементами микроплатежей. </p><p>Разработка игры началась в 2009 году, когда компания <b>Valve</b> приняла на работу основного разработчика 
+                <b>DotA</b> — <b>IceFrog</b>, а летом 2010 года подала заявку на регистрацию этой торговой марки. 
+                13 октября 2010 года на игровом портале <b>Game Informer</b> игра была анонсирована к выходу в 2011 году. 
+                15 августа 2011 года в официальном блоге был опубликован трейлер к игре. Dota 2 вышла в июле 2013 года после того, как два года находилась в стадии бета-тестирования.
+            </p>
+            <iframe class = "iframe" width="760" height="415" src="https://www.youtube.com/embed/-cSFPIwMEq4?si=nCx2CxZAEH72Chfh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <p class = "podpis">Первый трейлер игры 2013 год</p>
+        </section>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-name"></h2>
+                <p id="modal-description"></p>
+                <img id="modal-image" src="" alt="">
+            </div>
+        </div>
+
+        <section id="section2">
+            <h2>Персонажи</h2>
+            <p><i>Нажмите для более подробной информации</i></p>
+            <div class="character-images">
+                <img src="img/heroes/prewiew/sila/alchemist.jpg" alt="Alchemist" data-name="Alchemist" data-description="Alchemist — герой ближнего боя, один из самых богатых керри в игре за счёт своих способностей." data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/sila/axe.jpg" alt="Axe" data-name="Axe" data-description="Axe — герой-инициатор, раскрывающий себя на 3-й позиции в сложной линии." data-image="img/heroes/full/sila/axe.png">
+                <img src="img/heroes/prewiew/sila/bristleback.jpg" alt="Bristleback" data-name="Bristleback" data-description="Bristleback — герой основы, чаще всего идёт на сложную линию. Он обладает всеми необходимыми «танку» качествами и даже может сам наносить ощутимый урон героям противника." data-image="img/heroes/full/sila/bristleback.png">
+                <img src="img/heroes/prewiew/sila/centaurw.jpg" alt="Centaur Warrunner" data-name="Centaur Warrunner" data-description="Centaur Warrunner — стабильный герой-инициатор, предпочитающий сложную линию. Благодаря своим способностям, не теряет актуальность на любой стадии игры. " data-image="img/heroes/full/sila/centaurw.png">
+                <img src="img/heroes/prewiew/sila/chaosk.jpg" alt="Chaos Knight" data-name="Chaos Knight" data-description="Chaos Knight — герой, действительно, хаотичный. Все его способности когда-то имели возможность срабатывания случайного эффекта, а разброс урона является самым высоким в игре. " data-image="img/heroes/full/sila/chaosk.png">
+                <img src="img/heroes/prewiew/sila/dawnbreaker.jpg" alt="Dawnbreaker" data-name="Dawnbreaker" data-description="Dawnbreaker — разносторонний герой, обладающий высокими начальными характеристиками, способный как поддержать любого союзника за счёт своих универсальных и сильных умений, так и самому выступить авангардом команды." data-image="img/heroes/full/sila/dawnbreaker.png">
+                <img src="img/heroes/prewiew/sila/doom.jpg" alt="Doom" data-name="Doom" data-description="Doom — герой основы, обычно выбираемый на сложную линию. Часто используется как инициатор, покупающий ауры для команды, но очень уязвимый из-за низких показателей брони и скорости передвижения в начале игры." data-image="img/heroes/full/sila/doom.png">
+                <img src="img/heroes/prewiew/sila/dragonk.jpg" alt="Dragon Knight" data-name="Dragon Knight" data-description="Dragon Knight — герой основы, сражающийся в ближнем бою и способный поглощать большое количество урона. В игре исполняет роль танка-инициатора. " data-image="img/heroes/full/sila/dragonk.png">
+                <img src="img/heroes/prewiew/sila/earths.jpg" alt="Earth Spirit" data-name="Earth Spirit" data-description="Earth Spirit — герой поддержки, обладающий набором способностей для удержания противников в контроле и нанесения большого урона по области, но при этом сложный для освоения. " data-image="img/heroes/full/sila/earths.png">
+                <img src="img/heroes/prewiew/sila/earthshaker.jpg" alt="Earthshaker" data-name="Earthshaker" data-description="Earthshaker — герой поддержки, инициатор, предпочитающий сложную линию. Может быть как четвертой, так и третьей позицией, поскольку большее количество опыта и золота позволяют герою быстрее раскрыть весь свой потенциал. " data-image="img/heroes/full/sila/earthshaker.png">
+                <img src="img/heroes/prewiew/sila/eldert.jpg" alt="Elder Titan" data-name="Elder Titan" data-description="Elder Titan — герой поддержки, предпочитающий сложную линию. Максимальную пользу приносит в сражениях 5 на 5." data-image="img/heroes/full/sila/eldert.png">
+                <img src="img/heroes/prewiew/sila/huskar.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/sila/kunkka.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/sila/legionc.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/sila/lifestealer.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/sila/mars.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/sila/nights.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/sila/ogrem.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/omniknight.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/primalb.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/pudge.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/slardar.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/spiritb.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/sven.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/tidehunter.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/tiny.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/treantp.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/tusk.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/underlord.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/undying.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/sila/wraithk.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+
+                <img src="img/heroes/prewiew/lovkost/antim.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/arcw.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/bloodseeker.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/lovkost/bountyh.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/clinkz.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/drowr.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/embers.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/facelessv.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/gyrocopter.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/hoodwink.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/juggernaut.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/luna.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/medusa.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/meepo.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/monkeyk.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/morphling.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/nagas.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/phantoma.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/phantoml.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/razor.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png"> 
+                <img src="img/heroes/prewiew/lovkost/riki.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/lovkost/shadowf.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/lovkost/slark.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/lovkost/sniper.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/lovkost/spectre.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/lovkost/templara.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">  
+                <img src="img/heroes/prewiew/lovkost/terrorblade.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/lovkost/trollw.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/lovkost/ursa.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/lovkost/viper.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/lovkost/weaver.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                
+                <img src="img/heroes/prewiew/intellekt/ancienta.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/crystalm.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/deathp.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/disruptor.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/enchantress.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/grimstroke.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/jakiro.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/keeperotl.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/leshrac.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/lich.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/lina.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/lion.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/muerta.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/naturesp.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/necrophos.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/oracle.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/outworldd.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/puck.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/pugna.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/queenop.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/ringm.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/rubick.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/shadowd.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/silencer.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/skywrathm.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/storms.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/tinker.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/warlock.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/witchd.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/intellekt/zeus.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+
+                <img src="img/heroes/prewiew/universal/abaddon.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/bane.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/batrider.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/beastmaster.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/brewmaster.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/broodmother.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/chen.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/clockwerk.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/darks.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/dazzle.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/enigma.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/invoker.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/io.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/loned.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/lycan.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/magnus.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/marci.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/mirana.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/nyxa.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/pangolier.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/phoenix.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/sandk.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/snapfire.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/techies.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/timbersaw.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/vengefuls.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/venomancer.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/visage.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/voids.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/windranger.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/heroes/prewiew/universal/winterw.jpg" alt="Персонаж 1" data-name="Имя персонажа 1" data-description="Описание персонажа 1" data-image="img/heroes/full/sila/alchemist.png">
+            </div>
+            <p class = "podpis">Выше представлены все 161 персонаж существующих в игре на данный момент</p>
+            <p>Персонажи в Dota 2 – неотъемлемая и к тому же ключевая ее часть. Ведь именно за них игроки принимают участие во всем происходящем на карте. У каждого из них есть своя роль, некоторые имеют даже несколько возможных ролей.</p>
+            <p>На данном этапе существования Dota 2, из «старой доты» (DotA) перенесены  все герои. Сейчас в игре более 115 героев, абсолютно бесплатных для доступа. В интервью с «верхушкой» разработчиков игры, Valve, была подана надежда, что новые герои будут вводиться и после введения оставшихся из старой доты. Стоит отметить, что быстрорастущее сообщество игроков с удовольствием им в этом поможет, когда дело будет касаться именно идейной составляющей. Уже сейчас томятся  десятки героев (шуточных и не очень), которые возможно будут введены в ближайшие годы. Пока что выпуск новых героев производится довольно редко (примерно 1-2 в год), что не может не вызывать отрицательную реакцию сообщества. </p>
+            <p>Каждый герой доты имеет за плечами свою историю, свои особенности и способности. Во время игры можно даже услышать их реплики по отношению к другим героям, свидетельствующие об их характере и взаимоотношениях. Все персонажи делятся на 3 основные группы по главной характеристике, это: Сила, Ловкость и Интеллект. Легко догадаться, что эти названия указывают на главную характеристику того или иного персонажа.</p>
+        </section>
+        <section id="section3">
+            <h2>Предметы</h2>
+            <div class="items-images">
+                <img src="img/items/items/town_portal_scroll.jpg" alt="Town Portal Scroll" data-name="Town Portal Scroll" data-description="После 3 сек. произнесения заклинания, телепортирует героя к выбранной союзной постройке. При двойном нажатии телепортирует к фонтану своей команды." data-image="img/items/items/town_portal_scroll.jpg">
+                <img src="img/items/items/clarity.jpg" alt="Clarity" data-name="Clarity" data-description="Увеличивает восстановление маны выбранного существа на 6. Действует 25 сек. Восстановление прекращается, если получить урон от вражеского героя или Рошана." data-image="img/items/items/clarity.jpg">
+                <img src="img/items/items/faerie_fire.jpg" alt="Faerie Fire" data-name="Faerie Fire" data-description="Мгновенно восстанавливает 85 здоровья." data-image="img/items/items/faerie_fire.jpg">
+                <img src="img/items/items/smoke_of_deceit.jpg" alt="Smoke of Deceit" data-name="Smoke of Deceit" data-description="Все подконтрольные игрокам существа и герои в радиусе 1200 на 45 секунд становятся невидимыми, а скорость их передвижения увеличивается на 15%. Если применивший эту способность герой всё ещё находится под ее эффектом, он также будет накладываться на союзников, оказавшихся в радиусе 300. Эффект от каждого применения срабатывает на союзника только один раз. Если совершить атаку или приблизиться к вражескому герою или башне на расстояние в 1025, то невидимость раскроется. Другие эффекты, раскрывающие невидимость, не действуют.  " data-image="img/items/items/smoke_of_deceit.jpg">
+                <img src="img/items/items/observer_ward.jpg" alt="Observer Ward" data-name="Observer Ward" data-description="Устанавливает невидимый тотем наблюдения, который даёт наземный обзор в радиусе 1600. Действует 6 мин. Можно передать один вард союзному герою, зажав клавишу Ctrl." data-image="img/items/items/observer_ward.jpg">
+                <img src="img/items/items/sentry_ward.jpg" alt="Sentry Ward" data-name="Sentry Ward" data-description="Устанавливает невидимый тотем всевидения, раскрывающий невидимость вражеских существ и вардов в радиусе 1000, если они в зоне вашей видимости. Действует 7 мин. Не даёт наземный обзор. Можно передать один вард союзному герою, зажав клавишу Ctrl." data-image="img/items/items/sentry_ward.jpg">
+                <img src="img/items/items/enchanted_mango.jpg" alt="Enchanted Mango" data-name="Enchanted Mango" data-description="Мгновенно восстанавливает 100 маны." data-image="img/items/items/enchanted_mango.jpg">
+                <img src="img/items/items/healing_salve.jpg" alt="Healing Salve" data-name="Healing Salve" data-description="Увеличивает восстановление здоровья выбранного существа на 30. Действует 13 сек. Восстановление прекращается, если получить урон от вражеского героя или Рошана. Восстанавливает вдвое меньше при применении на союзника." data-image="img/items/items/healing_salve.jpg">
+                <img src="img/items/items/tango.jpg" alt="Tango" data-name="Tango" data-description="Съедает дерево, увеличивая восстановление здоровья на 7. Действует 16 сек. Если съесть деревце от Iron Branch, то восстановится в два раза больше здоровья." data-image="img/items/items/tango.jpg">
+                <img src="img/items/items/blood_grenade.jpg" alt="Blood Grenade" data-name="Blood Grenade" data-description="Бросает в указанную область радиусом 300 гранату, которая взрывается и наносит врагам 50 урона. Также в течение 5 сек. после взрыва враги будут получать 15 урона с интервалом в 1 сек. и передвигаться на -15% медленнее." data-image="img/items/items/blood_grenade.jpg">
+                <img src="img/items/items/dust_of_appearance.jpg" alt="Dust of Appearance" data-name="Dust of Appearance" data-description="На 12 сек. создаёт вокруг точки применения область радиусом 1050, которая раскрывает невидимых героев и замедляет их на -20%. Наносит 25 урона невидимым существам, раскрытым применением этого предмета. Эффект остаётся на врагах в течение 8 сек. после того, как они покинули область действия." data-image="img/items/items/dust_of_appearance.jpg">
+                <img src="img/items/items/bottle.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/aghanims_blessing.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/aghanims_shard.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/iron_branch.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/gauntlets_of_strength.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/slippers_of_agility.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/mantle_of_intelligence.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/circlet.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/belt_of_strength.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/band_of_elvenskin.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/robe_of_the_magi.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/crown.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/ogre_axe.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/diadem.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/blade_of_alacrity.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/staff_of_wizardry.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/quelling_blade.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/blitz_knuckles.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/ring_of_protection.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/infused_raindrops.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/blight_stone.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/orb_of_venom.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/blades_of_attack.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/chainmail.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/helm_of_iron_will.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/broadsword.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/claymore.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/javelin.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/mithril_hammer.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/ring_of_regen.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/sages_mask.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/magic_stick.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/fluffy_hat.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/wind_lace.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/cloak.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/gloves_of_haste.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/boots_of_speed.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/gem_of_true_sight.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/morbid_mask.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/voodoo_mask.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/shadow_amulet.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/ghost_scepter.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/blink_dagger.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/ring_of_health.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/void_stone.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/magic_wand.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/null_talisman.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/wraith_band.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/bracer.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/soul_ring.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/orb_of_corrosion.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/falcon_blade.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/power_treads.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/phase_boots.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/oblivion_staff.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/perseverance.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/mask_of_madness.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/hand_of_midas.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/helm_of_the_dominator.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/boots_of_travel.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/moon_shard.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/boots_of_travel_2.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/helm_of_the_overlord.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/buckler.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/ring_of_basilius.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/headdress.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/urn_of_shadows.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/tranquil_boots.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/arcane_boots.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/pavise.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/drum_of_endurance.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/mekansm.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/holy_locket.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/vladmirs_offering.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/spirit_vessel.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/pipe_of_insight.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/guardian_greaves.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/boots_of_bearing.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/parasma.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/veil_of_discord.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/glimmer_cape.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/force_staff.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/aether_lens.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/witch_blade.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/euls_scepter_of_divinity.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/rod_of_atos.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/dagon.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/orchid_malevolence.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/solar_crest.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/aghanims_scepter.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/refresher_orb.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/octarine_core.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/scythe_of_vyse.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/gleipnir.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/wind_waker.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/crystalys.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/meteor_hammer.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/armlet_of_mordiggian.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/skull_basher.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/shadow_blade.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/desolator.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/battle_fury.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/ethereal_blade.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/nullifier.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/monkey_king_bar.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/butterfly.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/radiance.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/daedalus.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/silver_edge.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/divine_rapier.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/bloodthorn.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/abyssal_blade.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/revenants_brooch.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/disperser.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/khanda.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/vanguard.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/blade_mail.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/aeon_disk.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/soul_booster.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/eternal_shroud.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/crimson_guard.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/lotus_orb.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/black_king_bar.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/hurricane_pike.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/manta_style.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/linkens_sphere.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/shivas_guard.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/heart_of_tarrasque.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/assault_cuirass.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/bloodstone.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/dragon_lance.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/sange.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/yasha.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/kaya.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/echo_sabre.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/maelstrom.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/diffusal_blade.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/mage_slayer.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/heavens_halberd.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/phylactery.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/kaya_and_sange.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/sange_and_yasha.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/yasha_and_kaya.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/satanic.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/eye_of_skadi.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/mjollnir.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/overwhelming_blink.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/swift_blink.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/arcane_blink.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/harpoon.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/ring_of_tarrasque.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/tiara_of_selemene.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/energy_booster.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/cornucopia.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/vitality_booster.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/point_booster.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/platemail.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/talisman_of_evasion.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/hyperstone.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/ultimate_orb.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/demon_edge.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/mystic_staff.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/reaver.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/eaglesong.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                <img src="img/items/items/sacred_relic.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+            </div>
+            <h2>Нейтральные предметы</h2>
+            <h3>Нейтральные предметы 1 разряда</h3>
+            <div class="neutral_items-images">  
+                    <img src="img/items/neutral_items/1/royal_jelly.jpg" alt="Royal Jelly" data-name="Royal Jelly" data-description="Потребляет все заряды желе и наделяет выбранного союзника эффектом, который дает +2,5 регенерации здоровья и +1,25 регенерации маны за заряд в течение 8 секунд. Восстановление прекращается, если получить урон от вражеского героя или Рошана." data-image="img/items/neutral_items/1/royal_jelly.jpg">
+                    <img src="img/items/neutral_items/1/broom_handle.jpg" alt="Broom Handle" data-name="Broom Handle" data-description="+4 к броне +8 к урону +50 к дальности атаки (ближний бой)" data-image="img/items/neutral_items/1/broom_handle.jpg">
+                    <img src="img/items/neutral_items/1/trusty_shovel.jpg" alt="Trusty Shovel" data-name="Trusty Shovel" data-description="Применяется 1 сек. Может выкопать Руну Богатства, Healing Salve, Enchanted Mango или союзного кобольда." data-image="img/items/neutral_items/1/trusty_shovel.jpg">
+                    <img src="img/items/neutral_items/1/safety_bubble.jpg" alt="Safety Bubble" data-name="Safety Bubble" data-description="Владельца окружает барьер на 100 здоровья. Он полностью восстанавливается, если не получать урон в течение 8 сек." data-image="img/items/neutral_items/1/safety_bubble.jpg">
+                    <img src="img/items/neutral_items/1/faded_broach.jpg" alt="Faded Broach" data-name="Faded Broach" data-description="+150 к мане +15 к скорости передвижения" data-image="img/items/neutral_items/1/faded_broach.jpg">
+                    <img src="img/items/neutral_items/1/arcane_ring.jpg" alt="Arcane Ring" data-name="Arcane Ring" data-description="Восстанавливает 75 маны всем окружающим союзникам." data-image="img/items/neutral_items/1/arcane_ring.jpg">
+                    <img src="img/items/neutral_items/1/seeds_of_serenity.jpg" alt="Seeds of Serenity" data-name="Seeds of Serenity" data-description="Создаёт в выбранной области целебный эффект, который даёт +10 восстановления здоровья всем союзникам, пока они находятся в зоне действия. Радиус области: 400. Длительность: 14 сек." data-image="img/items/neutral_items/1/seeds_of_serenity.jpg">
+                    <img src="img/items/neutral_items/1/lance_of_pursuit.jpg" alt="Lance of Pursuit" data-name="Lance of Pursuit" data-description="Атаковав врага в спину, владелец наносит ему на 15 урона больше и замедляет его на 16%/8% (в ближнем/дальнем бою) на 2 сек." data-image="img/items/neutral_items/1/lance_of_pursuit.jpg">
+                    <img src="img/items/neutral_items/1/pig_pole.jpg" alt="Pig Pole" data-name="Pig Pole" data-description="Превращает владельца в зверушку на 4 сек. и увеличивает его скорость передвижения на 10%." data-image="img/items/neutral_items/1/pig_pole.jpg">
+                    <img src="img/items/neutral_items/1/occult_bracelet.jpg" alt="Occult Bracelet" data-name="Occult Bracelet" data-description="Каждый раз, когда кто-то атакует владельца, он получает эффект, увеличивающий восстановление маны на 0,4. Максимум эффектов: 5. Длительность эффекта: 5 сек." data-image="img/items/neutral_items/1/occult_bracelet.jpg">
+                    <img src="img/items/neutral_items/1/duelist_gloves.jpg" alt="Duelist Gloves" data-name="Duelist Gloves" data-description="Даёт +20 бонус к скорости атаки, если в радиусе 1200 есть вражеские герои." data-image="img/items/neutral_items/1/duelist_gloves.jpg">
+                    <img src="img/items/neutral_items/1/fairys_trinket.jpg" alt="Fairy's Trinket" data-name="Fairy's Trinket" data-description="+50 к здоровью +5% к урону от заклинаний +5% к уменьшению расхода маны" data-image="img/items/neutral_items/1/fairys_trinket.jpg">
+                    <img src="img/items/neutral_items/1/spark_of_courage.jpg" alt="Spark of Courage" data-name="Spark of Courage" data-description="Даёт +16 к урону, когда владелец имеет больше 50% здоровья, и +7 к броне, когда владелец имеет меньше 50% здоровья." data-image="img/items/neutral_items/1/spark_of_courage.jpg">
+            </div>
+            <h3>Нейтральные предметы 2 разряда</h3>
+            <div class="neutral_items-images"> 
+                    <img src="img/items/neutral_items/2/vampire_fangs.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/whisper_of_the_dread.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/dragon_scale.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/orb_of_destruction.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/pupils_gift.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/vambrace.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/grove_bow.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/philosophers_stone.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/bullwhip.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/specialists_array.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/eye_of_the_vizier.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/gossamer_cape.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/2/light_collector.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+            </div>
+            <h3>Нейтральные предметы 3 разряда</h3>
+            <div class="neutral_items-images"> 
+                    <img src="img/items/neutral_items/3/defiant_shell.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/paladin_sword.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/nemesis_curse.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/vindicators_axe.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/dandelion_amulet.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/craggy_coat.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/enchanted_quiver.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/elven_tunic.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/cloak_of_flames.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/ceremonial_robe.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/psychic_headband.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/ogre_seal_totem.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/3/doubloon.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+            </div>
+            <h3>Нейтральные предметы 4 разряда</h3>
+            <div class="neutral_items-images"> 
+                    <img src="img/items/neutral_items/4/timeless_relic.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/4/ascetics_cap.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/4/avianas_feather.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/4/ninja_gear.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/4/stormcrafter.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/4/havoc_hammer.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/4/ancient_guardian.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/4/telescope.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/4/trickster_cloak.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/4/mind_breaker.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/4/martyrs_plate.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/4/rattlecage.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+            </div>     
+            <h3>Нейтральные предметы 5 разряда</h3>
+            <div class="neutral_items-images"> 
+                    <img src="img/items/neutral_items/5/force_boots.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/5/stygian_desolator.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/5/seer_stone.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/5/mirror_shield.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/5/apex.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/5/book_of_the_dead.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/5/arcanists_armor.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/5/pirate_hat.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/5/unwavering_condition.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/5/giants_ring.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/5/magic_lamp.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+                    <img src="img/items/neutral_items/5/book_of_shadows.jpg" alt="Alchemist" data-name="Alchemist" data-description="Описание" data-image="img/heroes/full/sila/alchemist.png">
+            </div>
+            <p class = "podpis">Выше представлены все предметы, существующие в игре на данный момент</p>
+            <p>Предметы — внутриигровое снаряжение героев, которое может давать героям дополнительные характеристики и специальные способности. Их можно купить в нескольких лавках на игровой карте. Некоторые предметы низкого разряда складываются в предметы высшего разряда, с помощью рецепта. Герои имеют шесть ячеек для предметов в их инвентаре, три ячейки в ранце, отдельную ячейку для нейтральных предметов и отдельную ячейку для Town Portal Scroll icon Town Portal Scroll, а также дополнительных шесть в их тайнике. Курьер может поднимать и отсылать предметы их владельцу.</p>
+        </section>
+    </div>
+    <footer>
+        <nav>
+            <a href="section3.html">О сайте</a>
+        </nav>
+    </footer>
+</body>
+</html>
+
+

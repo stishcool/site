@@ -1,0 +1,196 @@
+@font-face {
+    font-family: BicubikFont; /*для разделов и подписей*/
+    src: url('fonts/bicubik.woff2') format('woff2');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: PixelFont; /*нет применения*/
+    src: url('fonts/pixel.woff') format('woff');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: ModernFont; /*для всего текста*/
+    src: url('fonts/modern.woff') format('woff');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: DblackFont; /*для заголовков*/
+    src: url('fonts/dblack.woff2') format('woff2');
+    font-weight: normal; 
+    font-style: normal; 
+}
+body {
+    font-family: ModernFont;
+    margin: 0;
+    padding-top: 0;
+    background-image: url('img/1gr.jpg') ;
+}
+header {
+    font-family: DblackFont;
+    background-image: url('img/4.jpg') ;
+    background-size: cover; 
+    background-position: center; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    font-family: BicubikFont;
+    background-image: url('img/3.jpg') ;
+    background-size: cover; 
+    background-position: center; 
+    text-align: center;
+    padding: 20px 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px; 
+    transition: background-color 0.5s ease;
+}
+nav a:hover {
+    background-color: #000000b9;
+}
+.podpis{
+font-family: BicubikFont;
+padding-bottom: 20px;
+padding-top: 0;
+}
+.iframe{
+    padding-top: 30px;
+}
+.content {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 16%;
+    margin-right: 16%;
+}
+#section1{
+    background-color: rgba(255, 255, 255, 0.059);
+    transition: background-color 1.2s ease;
+}
+#section1:hover{
+    background-color: rgba(255, 255, 255, 0.12);
+}
+#section2{
+    background-color: rgba(255, 255, 255, 0.089);
+    transition: background-color 1.2s ease;
+}
+#section2:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+#section3{
+    background-color: rgba(255, 255, 255, 0.089);
+    transition: background-color 1.2s ease;
+}
+#section3:hover{
+    background-color: rgba(255, 255, 255, 0.12);
+}
+.character-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    position: relative;
+}
+.character-images img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+.character-images img:hover {
+    transform: scale(1.2);
+}
+.items-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    position: relative;
+}
+.items-images img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+.items-images img:hover {
+    transform: scale(1.2);
+}
+.neutral_items-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    position: relative;
+}
+.neutral_items-images img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+.neutral_items-images img:hover {
+    transform: scale(1.2);
+}
+body.modal-open {
+    overflow: hidden;
+}
+.modal {
+    color: #000000;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #cdcdcde9;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.section7{
+    background-color: rgba(255, 255, 255, 0.059);
+    transition: background-color 1.2s ease;
+}
+.section7:hover{
+    background-color: rgba(255, 255, 255, 0.12);
+}
+.section4{
+    background-color: rgba(255, 255, 255, 0.089);
+    transition: background-color 1.2s ease;
+}
+.section4:hover{
+    background-color: rgba(255, 255, 255, 0.12);
+}
+.section5{
+    background-color: rgba(255, 255, 255, 0.089);
+    transition: background-color 1.2s ease;
+}
+.section5:hover{
+    background-color: rgba(255, 255, 255, 0.12);
+}
